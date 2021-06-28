@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "407716598766",
+    "firebase_url": "https://lifephoto-49aad-default-rtdb.firebaseio.com",
+    "project_id": "lifephoto-49aad",
+    "storage_bucket": "lifephoto-49aad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407716598766:android:0d04d65b7024c043da34ff",
+        "android_client_info": {
+          "package_name": "com.proyectofinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "407716598766-inqrvesf7ce41o8uqeu97dtb1gf0v8sk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD15DaqMhBhA1UG3dazC42l08UGj-ZcwgM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "407716598766-inqrvesf7ce41o8uqeu97dtb1gf0v8sk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
