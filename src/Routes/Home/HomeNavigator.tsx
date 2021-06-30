@@ -11,8 +11,8 @@ const HomeNavigator = () => {
     return (
         <Navigator headerMode="none">
             <Screen name="Home" component={Home}/>
-            <Screen name="PrintNavigation" component={PrintNavigator}/>
-            <Screen name="FrameNavigation" component={FrameNavigator}/>
+            <Screen name="print" component={PrintNavigator}/>
+            <Screen name="frame" component={FrameNavigator}/>
         </Navigator>
     )
 }

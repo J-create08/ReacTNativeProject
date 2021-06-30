@@ -1,7 +1,6 @@
-import IWithML from './WithMLModel'
-import IWithOutML from './WithOutMLModel'
+import ISizeOption from './SizeOption'
 
 export default interface ISize {
-    withML: IWithML;
-    withOutML: IWithOutML;
+    option1: ISizeOption,
+    option2: ISizeOption,
 }

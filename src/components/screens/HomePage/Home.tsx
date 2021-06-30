@@ -9,14 +9,14 @@ import ProductList from '../../molecules/ProductList'
 const Home = () => {
 
     return ( 
-        <Container>
-            <Text style={styles.header}>Home</Text>
-            <ProductList/>
-        </Container>
+            <Container>
+                <Text style={styles.header}>LifePhoto</Text>
+                <ProductList/>
+            </Container>
     )
 }
 
-const Container = styled.View`
+const Container = styled.SafeAreaView`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     header: {
         fontWeight: '700',
         fontSize: 35,
-        color: '#E56717'
+        color: '#E56717',
     }
 })
 

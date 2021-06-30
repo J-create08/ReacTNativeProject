@@ -12,6 +12,7 @@
  import { SafeAreaView, Text } from 'react-native';
 import HomeNavigator from './src/Routes/Home';
 import { NavigationContainer } from '@react-navigation/native';
+import { ProductsProvider } from './src/context/products'
 
 // var firebaseConfig = {
 //   apiKey: "AIzaSyAQuVY95ZuXS4wROrj6t_zwDWE6xZrxByU",
@@ -29,9 +30,11 @@ import { NavigationContainer } from '@react-navigation/native';
  const App = () => {
 
    return (
-     <NavigationContainer>
-        <HomeNavigator/>
-     </NavigationContainer>
+     <ProductsProvider>
+        <NavigationContainer>
+            <HomeNavigator/>
+        </NavigationContainer>
+     </ProductsProvider>
    );
  };
 

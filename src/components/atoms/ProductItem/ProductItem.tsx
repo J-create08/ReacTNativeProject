@@ -10,10 +10,11 @@ interface ProductItemProps {
 const ProductItem: React.FC<ProductItemProps> = ({product}) => {
     const capTitle = capitalize(product.title)
     const description = product.description ? product.description : "Product"
-    const capDescription = capitalize(description)
+    const imageUri = product.imageUrl
+    const capDescription = addDot(capitalize(description))
     return (
         <ProductContainer>
-            <Image source={{uri:product.imageUrl}}/>
+            <Image style={styles.image} source={{uri:imageUri}}/>
             <Text style={styles.titleText}>{capTitle}</Text>
             <Text style={styles.text}>{capDescription}</Text>
         </ProductContainer>
@@ -21,30 +22,45 @@ const ProductItem: React.FC<ProductItemProps> = ({product}) => {
 }
 
 const capitalize = (text: string) => {
-    return text.charAt(0) + text.slice(1)
+    return text.charAt(0).toUpperCase() + text.slice(1)
+}
+
+const addDot = (text: string) => {
+    return text + "."
 }
 
 const ProductContainer = styled.View`
   display: flex;
   justify-content: center;
-  align-items: start;
-  margin: 30px;
+  align-items: flex-start;
+  margin: 20px;
   border-radius: 20px;
+  background-color: #FAFAFA;
+  padding: 5px;
+  box-shadow: 0px 2px 4px #DEDEDE;
 `
 
 const styles = StyleSheet.create({
     image: {
-        width: '100%',
+        width: 300,
+        height: 200,
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
+        borderBottomRightRadius: 10,
+        marginBottom: 5
     },
 
     text: {
-        fontSize: 20
+        fontSize: 15,
+        paddingLeft: 5,
+        paddingBottom: 8
     },
 
     titleText: {
         fontSize: 30,
         fontWeight: '700',
-        color: '#E56717'
+        color: '#E56717',
+        paddingLeft: 5
     }
 })
 
